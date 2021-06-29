@@ -1,3 +1,25 @@
+If you want to test this yourself, clone the repo, give execution permissions to the build script
+
+```bash
+chmod +x build.sh
+```
+
+then install dependencies for the root of the project and on partners folder
+
+```bash
+git clone ...
+cd cloned_project
+yarn install
+cd partners
+yarn install
+cd ..
+chmod +x build.sh
+yarn build-and-serve
+```
+
+wait until the application compiles cra, then nextjs and finally serves both applications under a single folder
+go to http://localhost:3000/ and see the react app, then go to http://localhost:3000/with/rick_sanchez and see how that page has the title meta tag in the document, no react, statically generated
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
